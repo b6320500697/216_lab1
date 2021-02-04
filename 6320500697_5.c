@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n,i,max,j;
+    int n,i,max=0,j;
     scanf ("%d",&n);
     int m[n];
     for(i=0;i<n;i++)
