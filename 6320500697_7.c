@@ -8,10 +8,11 @@ int main ()
     ceil(t);
     if (t<12)
     {
-        printf ("%f a.m.",time);
+        printf ("%.2f a.m.",time);
     }
     else
     {
-        printf ("%f p.m.",time);
+        printf ("%.2f p.m.",time);
     }
+    return 0;
 }
