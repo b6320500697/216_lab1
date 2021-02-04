@@ -3,17 +3,18 @@ int main()
 {
     int n;
     scanf ("%d",&n);
-    int m[n],i,max,j=0;
-    for(i=1;i<=n;i++)
+    int m[n],i,max,j;
+    for(i=0;i<n;i++)
     {
         scanf ("%d",&m[i]);
     }
-    for(i=1;i<=n;i++)
+    max=m[0];
+    for(i=1;i<n;i++)
     {
-        if(m[i]>max)
+        if(max<m[i])
         {
             max=m[i];
-            j=1;
+            j=i+1;
         }
     }
     printf ("%d %d",j,max);
