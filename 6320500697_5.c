@@ -14,9 +14,10 @@ int main()
         if(max<m[i])
         {
             max=m[i];
-            j=i+1;
+            j=i;
         }
     }
-    printf ("%d %d",j,max);
+    printf ("%d %d",j+1,max);
+    return 0;
 
 }
