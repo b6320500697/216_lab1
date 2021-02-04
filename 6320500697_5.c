@@ -15,6 +15,14 @@ int main()
 
 		}
     }
-    printf ("%d %d",j,max);
+    if(j=1)
+    {
+        printf ("%d",max);
+    }
+    else
+    {
+        printf ("%d %d",j,max);
+    }
+
 
 }
