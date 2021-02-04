@@ -1,10 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    long int N,j,k;
+    long int N;
     scanf ("%d",&N);
-    j=N%3;
-    k=N%11;
-    printf ("%d %d",j,k);
+    printf ("%d %d",N%3,N%11);
     return 0;
 }
