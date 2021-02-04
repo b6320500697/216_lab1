@@ -3,16 +3,18 @@ int main ()
 {
     float time;
     scanf ("%f",&time);
-    int t;
+    int t,s,se;
     t=(time*100)/100;
     ceil(t);
+    s=(time*100);
+    se=s%100;
     if (t<12)
     {
-        printf ("%.2f a.m.",time);
+        printf ("%d:%d a.m.",t,se);
     }
     else
     {
-        printf ("%.2f p.m.",time);
+        printf ("%d:%d p.m.",t,se);
     }
     return 0;
 }
