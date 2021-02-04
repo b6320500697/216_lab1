@@ -1,20 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    int n,i,max=0,j;
+    int n;
     scanf ("%d",&n);
-    int m[n];
-    for(i=0;i<n;i++)
+    int m[n],i,max,j=0;
+    for(i=1;i<=n;i++)
     {
-        scanf("%d",&m[i]);
+        scanf ("%d",&m[i]);
+    }
+    for(i=1;i<=n;i++)
+    {
         if(m[i]>max)
         {
-
-			max=m[i];
-			j=i+1;
-
-		}
+            max=m[i];
+            j=1;
+        }
     }
-        printf ("%d %d",j,max);
+    printf ("%d %d",j,max);
 
 }
